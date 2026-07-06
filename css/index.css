@@ -1,0 +1,300 @@
+/* 全局样式 */
+
+* {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* header区域样式 */
+
+header {
+    position: relative;
+    height: 210px;
+    background-color: darkturquoise;
+}
+
+header .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header>.container>img {
+    float: left;
+    height: 90px;
+    margin: 50px 50px 0px;
+}
+
+header>.container>audio {
+    float: left;
+    margin: 70px 150px 0px;
+}
+
+header>.container>marquee {
+    font-size: 15px;
+    height: 20px;
+}
+
+
+/* nav导航栏区域样式 */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    line-height: 40px;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    background-color: blue;
+}
+
+nav ul li:nth-child(2) {
+    background-color: blueviolet;
+}
+
+nav ul li:nth-child(3) {
+    background-color: chocolate;
+}
+
+nav ul li:nth-child(4) {
+    background-color: indigo;
+}
+
+nav ul li:nth-last-child(3) {
+    background-color: red;
+}
+
+nav ul li:nth-last-child(2) {
+    background-color: cadetblue;
+}
+
+nav ul li:last-child {
+    background-color: darkred;
+}
+
+nav ul li:hover {
+    padding-bottom: 6px;
+}
+
+nav ul li.active {
+    padding-bottom: 6px;
+}
+
+
+/* banner区域样式 */
+
+.banner {
+    position: relative;
+    background-color: aliceblue;
+}
+
+.banner>ul {
+    position: relative;
+    width: 1200px;
+    height: 390px;
+    margin: 0 auto;
+}
+
+.banner>ul>li {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.banner>ul>li.active {
+    left: 0px;
+    right: 0px;
+    margin: 20px auto;
+    width: 750px;
+    height: 350px;
+}
+
+.banner>ul>li.left {
+    left: 0px;
+    margin: 20px auto;
+}
+
+.banner>ul>li.right {
+    right: -60px;
+    margin: 20px auto;
+}
+
+.banner>ul>li>img {
+    height: 100%;
+}
+
+
+/* section区域样式 */
+
+.main {
+    position: relative;
+    width: 1200px;
+    height: 1650px;
+    margin: 30px auto 0px;
+}
+
+
+/* 上面区域样式 */
+
+.midtop {
+    overflow: hidden;
+    background-color: azure;
+    border-bottom: 2px solid cyan;
+}
+
+.midtop h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: darkturquoise;
+    color: darkorchid;
+}
+
+.midtop p {
+    margin: 10px;
+    font-size: 18px;
+    line-height: 2em;
+    text-indent: 2em;
+}
+
+
+/* 上左边区域样式 */
+
+.midtopleft {
+    float: left;
+    width: 500px;
+    height: 610px;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.midtopleft h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    border-bottom: 2px solid cyan;
+}
+
+.midtopleft dl {
+    position: relative;
+    display: block;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.midtopleft dl dt {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    border-bottom: 2px solid;
+}
+
+.midtopleft dl dd {
+    position: absolute;
+    margin: 25px 10px 10px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+
+/* 上右边区域样式 */
+
+.midtopright {
+    float: right;
+    width: 500px;
+    height: 610px;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.midtopright h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    border-bottom: 2px solid blue;
+}
+
+.midtopright p {
+    margin: 20px 10px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.midtopright img {
+    border: 1px solid gray;
+    width: 500px;
+    height: 200px;
+}
+
+
+/* 下左边与右边区域样式*/
+
+.midbottom {
+    float: left;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.midbottom h1 {
+    font-size: 30px;
+    margin: 10px;
+    border-bottom: 2px solid green;
+}
+
+.midbottom p {
+    margin: 10px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.midbottom img {
+    width: 380px;
+    margin: auto 10px;
+}
+
+
+/* 下中间区域样式 */
+
+.midbottomcenter {
+    float: left;
+    width: 400px;
+    height: 620px;
+    overflow: hidden;
+}
+
+.midbottomcenter h1 {
+    font-size: 30px;
+    margin: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+.midbottomcenter img {
+    width: 350px;
+    margin: 10px 20px;
+}
+
+.midbottomcenter h1 a {
+    color: blue;
+    font-family: "微软雅黑";
+    text-decoration: none;
+}

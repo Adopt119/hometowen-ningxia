@@ -1,0 +1,161 @@
+/* 全局样式 */
+
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header区域样式 */
+
+header {
+    position: relative;
+    height: 120px;
+    background-color: aqua;
+}
+
+header .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header>.container>img {
+    margin: 20px auto;
+    height: 85px;
+}
+
+header .container nav {
+    float: right;
+}
+
+
+/* nav区域样式 */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 60px auto auto;
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    background-color: blue;
+}
+
+nav ul li:nth-child(2) {
+    background-color: blueviolet;
+}
+
+nav ul li:nth-child(3) {
+    background-color: chocolate;
+}
+
+nav ul li:nth-child(4) {
+    background-color: indigo;
+}
+
+nav ul li:nth-last-child(3) {
+    background-color: red;
+}
+
+nav ul li:nth-last-child(2) {
+    background-color: cadetblue;
+}
+
+nav ul li:last-child {
+    background-color: darkred;
+}
+
+nav ul li:hover {
+    padding-bottom: 5px;
+}
+
+nav ul li.active {
+    padding-bottom: 10px;
+}
+
+
+/* section区域样式 */
+
+.main {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 35px auto 0;
+}
+
+
+/* 中间上部区域样式 */
+
+.midtop p {
+    font-size: 16px;
+    margin: 10px 20px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.midtop h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    border-bottom: 2px solid cyan;
+}
+
+.midtop h1 a {
+    font-size: 30px;
+}
+
+.midtop audio {
+    float: right;
+    margin: 0px 0px 0px 20px;
+}
+
+.midtop h2 {
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: 2px solid blue;
+}
+
+.midtop img {
+    float: right;
+    margin: auto 10px;
+    width: 250px;
+    border: 1px solid green;
+}
+
+
+/* 中间下部区域样式 */
+
+.midbottom p {
+    font-size: 16px;
+    margin: 10px 20px;
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+.midbottom h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 100px 20px auto;
+    border-bottom: 2px solid cyan;
+}
+
+.midbottom h2 {
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: 2px solid blue;
+}

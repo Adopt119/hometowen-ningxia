@@ -1,0 +1,136 @@
+/* 全局样式 */
+
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header区域样式 */
+
+header {
+    position: relative;
+    height: 120px;
+    background-color: aqua;
+}
+
+header .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header>.container>img {
+    margin: 20px auto;
+    height: 85px;
+}
+
+header .container nav {
+    float: right;
+}
+
+
+/* nav区域样式 */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 60px auto auto;
+    float: left;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    background-color: blue;
+}
+
+nav ul li:nth-child(2) {
+    background-color: blueviolet;
+}
+
+nav ul li:nth-child(3) {
+    background-color: chocolate;
+}
+
+nav ul li:nth-child(4) {
+    background-color: indigo;
+}
+
+nav ul li:nth-last-child(3) {
+    background-color: red;
+}
+
+nav ul li:nth-last-child(2) {
+    background-color: cadetblue;
+}
+
+nav ul li:last-child {
+    background-color: darkred;
+}
+
+nav ul li:hover {
+    padding-bottom: 5px;
+}
+
+nav ul li.active {
+    padding-bottom: 10px;
+}
+
+
+/* section区域样式 */
+
+.main {
+    position: relative;
+    width: 1000px;
+    height: 1250px;
+    margin: 35px auto 0;
+}
+
+.main>h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    border-bottom: 2px solid cyan;
+}
+
+.main>video {
+    margin: auto 100px;
+    width: 800px;
+}
+
+
+/*文字部分样式*/
+
+.midbottombottom {
+    margin: 20px;
+    float: left;
+    overflow: hidden;
+    background-color: azure;
+    border-bottom: 2px solid cyan;
+}
+
+.midbottombottom h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: darkturquoise;
+    color: darkorchid;
+}
+
+.midbottombottom p {
+    margin: 10px;
+    font-size: 18px;
+    line-height: 2em;
+    text-indent: 2em;
+}
