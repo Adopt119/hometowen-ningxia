@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>留言信息</title>
+  <link type="text/css" href="css/message.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img alt="logo图片" src="images/other/logo.png" />
+      <nav>
+        <ul>
+          <li><a href="index.html">本站首页</a></li>
+          <li><a href="video.html">视频浏览</a></li>
+          <li><a href="pianning.html">行政区划</a></li>
+          <li><a href="culture.html">地方文化</a></li>
+          <li><a href="delicacies.html">特产美食</a></li>
+          <li><a href="touring.html">旅游景点</a></li>
+          <li class="active"><a href="message.html">留言信息</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="main">
+    <div class="midtop">
+      <h1>宁夏回族自治区</h1>
+      <video src="media/宁夏24小时.mp4" autoplay="autoplay" controls="controls"></video>
+      <form id="messageForm" action="message.html" method="post">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">邮箱:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">留言:</label>
+        <textarea id="message" name="message" rows="5" cols="20" required></textarea><br />
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置" />
+      </form>
+    </div>
+  </section>
+  <div id="messages"></div>
+  <script type="text/javascript">
+    document
+      .getElementById("messageForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        submitForm();
+      });
+
+    function submitForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      // 对输入数据进行编码
+      var encodedName = encodeURIComponent(name);
+      var encodedMessage = encodeURIComponent(message);
+      // 存储留言信息到 localStorage
+      var messages = JSON.parse(localStorage.getItem("messages")) || [];
+      messages.push({
+        name: encodedName,
+        email: email,
+        message: encodedMessage,
+      });
+      localStorage.setItem("messages", JSON.stringify(messages));
+      alert("留言成功！");
+      // 展示留言信息
+      displayMessages();
+    }
+
+    function displayMessages() {
+      var messagesDiv = document.getElementById("messages");
+      messagesDiv.innerHTML = ""; // 清空原有内容
+      var messages = JSON.parse(localStorage.getItem("messages")) || [];
+      messages.forEach(function (msg) {
+        var messageElement = document.createElement("div");
+        messageElement.innerHTML =
+          "<strong>姓名: " +
+          decodeURIComponent(msg.name) +
+          "</strong><br><span class='email'>邮箱: " +
+          msg.email +
+          "</span><br>留言: " +
+          decodeURIComponent(msg.message);
+        messagesDiv.appendChild(messageElement);
+      });
+    }
+    // 页面加载时展示留言信息
+    window.onload = function () {
+      displayMessages();
+    };
+  </script>
+</body>
+<iframe src="footer.html" width="100%" height="100px"></iframe>
+
+</html>
